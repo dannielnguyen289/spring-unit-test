@@ -1,16 +1,18 @@
-package com.stringeex.module.query;
+package com.stringeex.module;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class InsertEntityPrt {
+public class SamEntity {
     Long id;
     String name;
     String description;
+    Date createdAt;
+    Date updatedAt;
 }
